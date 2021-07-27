@@ -1,0 +1,60 @@
+@import "All";
+@import "Navigation";
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .content {
+    height: 82%;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.74),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url("../images/user-bg.webp");
+    background-size: cover;
+    background-position: 0% 43%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    table {
+      border-collapse: collapse;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      width: 75%;
+
+      tr {
+        margin-bottom: 5px;
+        th,
+        td {
+          padding: 10px 15px;
+        }
+
+        th {
+          background: transparent;
+        }
+
+        td {
+          background: rgba(255, 255, 255, 0.39);
+          border: 2px solid rgba(0, 0, 0, 0.42);
+
+          &.td-center {
+            text-align: center;
+
+            i {
+              &:hover {
+                color: $slider-accent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

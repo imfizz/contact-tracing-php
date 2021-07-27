@@ -1,0 +1,15 @@
+@import "Variables";
+
+* {
+  font-family: $font;
+  $font-weight: $regular;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

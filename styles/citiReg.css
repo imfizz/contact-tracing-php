@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.74)), to(rgba(0, 0, 0, 0.65))), url("../images/dashboard-bg.webp");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.65)), url("../images/dashboard-bg.webp");
+  background-size: cover;
+  background-position: 0% 43%;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.main-container form {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+}
+
+.main-container form h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.main-container form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.main-container form label input {
+  margin: 10px 0;
+  padding: 15px 20px;
+}
+
+.main-container form button {
+  background: #dc2d22;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.main-container form button:hover {
+  background: #c6281f;
+}
+/*# sourceMappingURL=citiReg.css.map */

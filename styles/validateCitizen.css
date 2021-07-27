@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 18%;
+  width: 100%;
+  position: relative;
+  background: #222c37;
+}
+
+header .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 120px;
+  height: 65%;
+}
+
+header .top-nav .contact-wrapper,
+header .top-nav .logo-wrapper,
+header .top-nav .user-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-nav .contact-wrapper .logo,
+header .top-nav .logo-wrapper .logo,
+header .top-nav .user-wrapper .logo {
+  background-image: url("../images/covid.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+header .top-nav .contact-wrapper i,
+header .top-nav .logo-wrapper i,
+header .top-nav .user-wrapper i {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+header .top-nav .contact-wrapper p,
+header .top-nav .logo-wrapper p,
+header .top-nav .user-wrapper p {
+  color: #cbcbcb;
+  font-weight: 500;
+}
+
+header .top-nav .contact-wrapper p a,
+header .top-nav .logo-wrapper p a,
+header .top-nav .user-wrapper p a {
+  color: #cbcbcb;
+}
+
+header .top-nav .contact-wrapper p a:hover,
+header .top-nav .logo-wrapper p a:hover,
+header .top-nav .user-wrapper p a:hover {
+  color: #f1f1f1;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: red;
+  height: 35%;
+  border-top: 2px solid #344456;
+  background: #222c37;
+  padding: 0 120px;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  margin-right: 65px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #cbcbcb;
+}
+
+header nav ul li:hover {
+  color: #e5e5e5;
+}
+
+header nav ul li.active {
+  color: #dc2d22;
+}
+
+header nav ul li a {
+  color: #cbcbcb;
+}
+
+header nav ul li a.active {
+  color: #dc2d22;
+}
+
+header nav ul li a.active:hover {
+  color: #e76b64;
+}
+
+header nav ul li a:hover {
+  color: #d8d8d8;
+}
+
+header nav ul li:hover ul {
+  display: block;
+}
+
+header nav ul li ul {
+  padding-top: 18px;
+  width: auto;
+  display: none;
+  position: absolute;
+  -webkit-transform: translate(-20px, 0px);
+          transform: translate(-20px, 0px);
+  background: transparent;
+  z-index: 3;
+}
+
+header nav ul li ul li {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  background: #222c37;
+}
+
+header nav ul li ul li:first-child {
+  border-bottom: 1px solid white;
+}
+
+header nav ul li ul li:hover {
+  background: #495e76;
+}
+
+header nav ul li i {
+  margin-left: 10px;
+  font-weight: 700;
+  color: #cbcbcb;
+  cursor: pointer;
+}
+
+header nav ul li.searchbar {
+  -webkit-transform: translateX(680px);
+          transform: translateX(680px);
+}
+
+header nav ul li.searchbar input {
+  padding: 7px 15px;
+  border: 1px solid #c9c9c9;
+  border-radius: 20px;
+  background: transparent;
+  outline: none;
+  min-width: 220px;
+}
+
+header nav ul li.searchbar input:focus {
+  outline: none;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.main-container .content {
+  height: 82%;
+  width: 100%;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.74)), to(rgba(0, 0, 0, 0.65))), url("../images/user-bg.webp");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.65)), url("../images/user-bg.webp");
+  background-size: cover;
+  background-position: 0% 43%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-container .content table {
+  border-collapse: collapse;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  width: 75%;
+}
+
+.main-container .content table tr {
+  margin-bottom: 5px;
+}
+
+.main-container .content table tr th,
+.main-container .content table tr td {
+  padding: 10px 15px;
+}
+
+.main-container .content table tr th {
+  background: transparent;
+}
+
+.main-container .content table tr td {
+  background: rgba(255, 255, 255, 0.39);
+  border: 2px solid rgba(0, 0, 0, 0.42);
+}
+
+.main-container .content table tr td.td-center {
+  text-align: center;
+}
+
+.main-container .content table tr td.td-center i:hover {
+  color: #55b5fa;
+}
+/*# sourceMappingURL=validateCitizen.css.map */

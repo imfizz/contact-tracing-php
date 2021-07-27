@@ -1,0 +1,112 @@
+@import "All";
+@import "Navigation";
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .content {
+    height: 82%;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.74),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url("../images/user-bg.webp");
+    background-size: cover;
+    background-position: 0% 43%;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      background: #fff;
+      padding: 50px 50px;
+      border-radius: 15px;
+
+      form {
+        div {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          font-weight: $bold;
+          color: #353535;
+
+          h3 {
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgb(165, 165, 165);
+            font-weight: $regular;
+            font-size: 1.2rem;
+            padding-top: 15px;
+            color: #525252;
+          }
+
+          img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 2px solid black;
+            margin-top: 15px;
+          }
+        }
+
+        .valid,
+        .reject {
+          padding: 13px 0;
+          font-weight: $bold;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom: 5px;
+        }
+
+        .valid {
+          background: $slider-accent;
+
+          &:hover {
+            background: darken($slider-accent, 5%);
+          }
+        }
+
+        .reject {
+          background: $accent;
+
+          &:hover {
+            background: darken($accent, 5%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.74)), to(rgba(0, 0, 0, 0.65))), url("../images/establishment-bg.webp");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.65)), url("../images/establishment-bg.webp");
+  background-size: cover;
+  background-position: 0% 43%;
+}
+
+.main-container h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  font-size: 2.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+.main-container h1 span {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-container form {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-container form input {
+  padding: 15px 20px;
+  min-width: 360px;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=establishmentDashboard.css.map */

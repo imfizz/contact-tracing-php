@@ -1,0 +1,14 @@
+(registrar)
+nag eedit ng percentage
+tingin ng sinubmit na grade
+tagapagsend sa student portal
+
+(prof)
+computation ng grade(per section)
+submit sa admin
+class list
+class record(with names)
+classes
+
+
+

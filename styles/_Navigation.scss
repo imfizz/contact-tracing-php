@@ -1,0 +1,153 @@
+header {
+  height: 18%;
+  width: 100%;
+  position: relative;
+  background: $mainColor;
+
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    height: 65%;
+
+    .contact-wrapper,
+    .logo-wrapper,
+    .user-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .logo {
+        background-image: url("../images/covid.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+      }
+
+      i {
+        margin-right: 20px;
+        font-size: 1.2rem;
+      }
+
+      p {
+        color: $secondary;
+        font-weight: $medium;
+
+        a {
+          color: $secondary;
+
+          &:hover {
+            color: lighten($secondary, 15%);
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    background: red;
+    height: 35%;
+    border-top: 2px solid #344456;
+    background: $mainColor;
+    padding: 0 120px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      li {
+        margin-right: 65px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: $bold;
+        cursor: pointer;
+        color: $secondary;
+
+        &:hover {
+          color: lighten($secondary, 10%);
+        }
+
+        &.active {
+          color: $accent;
+        }
+
+        a {
+          color: $secondary;
+
+          &.active {
+            color: $accent;
+
+            &:hover {
+              color: lighten($accent, 15%);
+            }
+          }
+
+          &:hover {
+            color: lighten($secondary, 5%);
+          }
+        }
+
+        &:hover ul {
+          display: block;
+        }
+
+        ul {
+          padding-top: 18px;
+          width: auto;
+          display: none;
+          position: absolute;
+          transform: translate(-20px, 0px);
+          background: transparent;
+          z-index: 3;
+
+          li {
+            width: 100%;
+            margin: 0;
+            padding: 10px 20px;
+            background: $mainColor;
+
+            &:first-child {
+              border-bottom: 1px solid white;
+            }
+
+            &:hover {
+              background: lighten($mainColor, 20%);
+            }
+          }
+        }
+
+        i {
+          margin-left: 10px;
+          font-weight: $bold;
+          color: $secondary;
+          cursor: pointer;
+        }
+
+        &.searchbar {
+          transform: translateX(680px);
+
+          input {
+            padding: 7px 15px;
+            border: 1px solid #c9c9c9;
+            border-radius: 20px;
+            background: transparent;
+            outline: none;
+            min-width: 220px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

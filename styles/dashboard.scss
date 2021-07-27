@@ -1,0 +1,101 @@
+@import "All";
+@import "Navigation";
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .content {
+    height: 82%;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.67),
+        rgba(0, 0, 0, 0.54)
+      ),
+      url("../images/dashboard-bg.webp");
+    background-size: cover;
+    background-position: 0% 63%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .headline {
+      position: absolute;
+      top: 50%;
+      left: 12%;
+      transform: translate(-12%, -50%);
+      padding-bottom: 80px;
+
+      p {
+        color: #969696;
+        font-weight: $bold;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        color: $secondary;
+        font-weight: $regular;
+        font-size: 1.6rem;
+        max-width: 670px;
+        margin-bottom: 50px;
+      }
+
+      a {
+        padding: 15px 35px;
+        background: $accent;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-weight: $bold;
+
+        i {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          background: darken($accent, 5%);
+        }
+      }
+    }
+
+    .slider-wrapper {
+      position: absolute;
+      bottom: 10%;
+      left: 54%;
+      transform: translate(-54%, -10%);
+      display: flex;
+
+      .btn {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #fff;
+        margin-right: 15px;
+        cursor: pointer;
+
+        &.active {
+          background: $slider-accent;
+
+          &:hover {
+            background: $slider-accent;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background: darken(#fff, 15%);
+        }
+      }
+    }
+  }
+}

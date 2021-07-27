@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+$font: "Roboto", sans-serif;
+
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+// colors
+$mainColor: #222c37;
+$accent: #dc2d22;
+$secondary: #cbcbcb;
+$slider-accent: #55b5fa;
+
+// color gradient
+$gradient: linear-gradient(rgba(109, 109, 109, 0.6), rgba(109, 109, 109, 0.6));
+$gradient-login: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38));

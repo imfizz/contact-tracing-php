@@ -1,0 +1,57 @@
+@import "All";
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.74),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("../images/dashboard-bg.webp");
+  background-size: cover;
+  background-position: 0% 43%;
+  position: fixed;
+  overflow-y: scroll;
+
+  form {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.4rem;
+
+      input {
+        margin: 10px 0;
+        padding: 15px 20px;
+      }
+    }
+
+    button {
+      background: $accent;
+      border: none;
+      font-size: 1.4rem;
+      font-weight: $bold;
+      padding: 15px 20px;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($accent, 5%);
+      }
+    }
+  }
+}
