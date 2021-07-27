@@ -1,0 +1,57 @@
+ContactTracing - DBNAME
+
+TABLES
+admin
+    - admin_id INT NOT NULL PRIMARY KEY IDENTITY(1,1) 
+    - username VARCHAR(100) NOT NULL
+    - password VARCHAR(100) NOT NULL
+    - department VARCHAR(50) NOT NULL
+
+establishment
+    - establishment_id INT NOT NULL PRIMARY KEY IDENTITY(1,1)
+    - name VARCHAR(100) NULL
+    - registrationNo VARCHAR(100) NULL
+    - address VARCHAR(255) NULL
+    - email VARCHAR(100) NULL
+    - password VARCHAR(100) NULL
+    - picture VARCHAR(100) NULL
+    - isValid VARCHAR(50) NOT NULL
+
+record
+    - record_id INT NOT NULL PRIMARY KEY IDENTITY(1,1)
+    - user_citizen_id INT NOT NULL                          FOREIGN KEY FROM user TABLE
+    - establishment_establishment_id INT NOT NULL           FOREIGN KEY FROM establishment TABLE
+    - time VARCHAR(50) NOT NULL
+    - date DATE NOT NULL
+
+user
+    - user_id INT NOT NULL PRIMARY KEY IDENTITY(1,1)
+    - lastname VARCHAR(50) NULL
+    - firstname VARCHAR(50) NULL
+    - middlename VARCHAR(50) NULL
+    - suffix VARCHAR(20) NULL
+    - gender VARCHAR(20) NULL
+    - birthday DATE NOT NULL
+    - houseNo VARCHAR(50) NULL
+    - street VARCHAR(50) NULL
+    - barangay VARCHAR(50) NULL
+    - city VARCHAR(50) NULL
+    - nationality VARCHAR(20) NULL
+    - civilstatus VARCHAR(50) NULL
+    - contactNo VARCHAR(50) NULL
+    - email VARCHAR(100) NULL
+    - contactPersonLastname VARCHAR(50) NULL
+    - contactPersonFirstname VARCHAR(50) NULL
+    - contactPersonMiddlename VARCHAR(50) NULL
+    - contactPersonSuffix VARCHAR(20) NULL
+    - relation VARCHAR(50) NULL
+    - contact_houseNo VARCHAR(50) NULL
+    - contact_street VARCHAR(50) NULL
+    - contact_barangay VARCHAR(50) NULL
+    - contact_city VARCHAR(50) NULL
+    - contact_contactNo VARCHAR(50) NULL
+    - picture_file VARCHAR(100) NULL
+    - validID VARCHAR(100) NULL
+    - signature VARCHAR(100) NULL
+    - isValid VARCHAR(50) NOT NULL
+    - citizen_key VARCHAR(100) NULL
